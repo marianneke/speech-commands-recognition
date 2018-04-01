@@ -11,7 +11,7 @@ Training ConvNet models using [Google Commands Dataset](https://research.googleb
 ## Installation
 Several libraries are needed to be installed in order to extract spectrograms and train the models.
 
-* Install [PyTorch](https://github.com/pytorch/pytorch#installation) if you haven't already :)
+* Install [PyTorch](https://github.com/pytorch/pytorch#installation)
 * Install [LibRosa](https://github.com/librosa/librosa)
 
 ## Usage
@@ -21,12 +21,12 @@ Download and extract the [Google Commands Dataset](https://research.googleblog.c
 
 To make the arrange the data run the following command:
 ```
-python make_dataset.py <google-command-folder> --out_path <path to save the data the new format>
+python make_dataset.py <google-command-folder> --out_path <path to save the data in the new format>
 ```
 
 ### Custom Dataset
 You can also use the data loader and training scripts for your own custom dataset.
-In order to do so the dataset should be arrange in the following way:
+In order to do so, the dataset should be arranged in the following way:
 ```
 root/up/kazabobo.wav
 root/up/asdkojv.wav
@@ -44,13 +44,13 @@ python run.py --train_path <train_data_path> --valid_path <valid_data_path> --te
 ```
 
 ### Results
-Accuracy results for the train, validation and test sets using two ConvNet models (LeNet5 and VGG11). 
+Accuracy results for the train, validation and test sets using two ConvNet models (LeNet5 and VGG11).
 
-In order to reproduce the below results just exec the run.py file with default parameters.
+In order to reproduce the below results just execute the run.py file with default parameters.
 Results may be improved using deeper models (VGG13, VGG19), or better hyper-parameters optimization.
 
 | Model | Train acc. | Valid acc. | Test acc.|
 | ------------- | ------------- | ------------- | ------------- |
-| LeNet5  | 99% (50742/51088)  | 90% (6093/6798) | 89% (6096/6835) | 
+| LeNet5  | 99% (50742/51088)  | 90% (6093/6798) | 89% (6096/6835) |
 | VGG11  |  97% (49793/51088) | 94% (6361/6798) | 94% (6432/6835) |
 
